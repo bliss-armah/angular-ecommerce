@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+@layer components {
+    .btn {
+        @apply  text-[#8A33FD] text-[18px] font-medium py-3 px-12 rounded;
+    }
+    .btn-primary {
+        @apply bg-[#8A33FD] text-white text-[18px] font-medium py-3 px-12 rounded border border-[#3C4242];
+    }
+
+}
